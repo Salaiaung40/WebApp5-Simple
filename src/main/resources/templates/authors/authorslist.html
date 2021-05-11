@@ -8,20 +8,20 @@ need to add new directory (Books)
     <title>Spring Framework Guru Exercises by Salai </title>
 </head>
 <body>
-<h1>Book List</h1>
+<h1>Author List by Salai</h1>
 
 <table>
     <tr>
         <th>ID</th>
-        <th>Title</th>
-        <th>Publisher</th>
+        <th>First Name</th>
+        <th>Last Name</th>
     </tr>
 
 
-    <tr th:each="book : ${books}">
-        <td th:text="${book.id}">123</td>
-        <td th:text="${book.title}"> Spring in Action</td>
-        <td th:text="${book.publisher.name}">Wrox</td>
+    <tr th:each="author : ${authors}">
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName}"> Spring in Action</td>
+        <td th:text="${author.lastName}">Wrox</td>
     </tr>
 </table>
 
